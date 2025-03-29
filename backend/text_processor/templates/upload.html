@@ -1,0 +1,16 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Przetwarzanie Tekstu</title>
+</head>
+<body>
+    <h1>Prześlij plik tekstowy</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Prześlij</button>
+    </form>
+    <br>
+    <a href="/pesel/">Walidator PESEL</a>
+</body>
+</html>
