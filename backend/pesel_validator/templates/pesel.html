@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Walidator PESEL</title>
+</head>
+<body>
+    <h1>Walidator numeru PESEL</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sprawdź</button>
+    </form>
+
+    {% if valid is not None %}
+        {% if valid %}
+            <p>PESEL jest poprawny. {{ info }}</p>
+        {% else %}
+            <p>PESEL jest niepoprawny. {{ info }}</p>
+        {% endif %}
+    {% endif %}
+
+    <br>
+    <a href="/text/upload/">Przetwarzanie Tekstu</a>
+</body>
+</html>
