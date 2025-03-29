@@ -1,0 +1,15 @@
+# Python files
+*.py[cod]
+__pycache__/
+
+# Log files
+*.log
+
+# SQLite database
+db.sqlite3
+
+# IDE and editor configuration files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
