@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "text_processor",
+    "pesel_validator",
 ]
 
 MIDDLEWARE = [
